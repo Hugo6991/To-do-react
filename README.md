@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Inspirce by : [React Todo List App Tutorial - React JS Project Tutorial for Beginners](https://www.youtube.com/watch?v=Hf4MJH0jDb4)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### What I learned ? 
 
-## Available Scripts
+1. Strat components by using `rafc`
+2. useState - to manage value input by users
+3. Define a function include multiple funtion
 
-In the project directory, you can run:
+```
+// funtion like task, toolComplete, deleteTodo, editTodo
+const Todo = ({task, toggleComplete, deleteTodo, editTodo}) => {
 
-### `npm start`
+}
+```
+4. onClick - to call function
+5. use `console.log` to check the vlaue
+6. AI make mistake and misunderstand the code → need better tool 
+7. [Cursor](https://cursor.sh/) response is pretty slow and not precise 
+8. [CodeGeeX](https://codegeex.cn/) is the best tool to check the code ( response fast and format is easy to read)
+10. Create environment by using `create-react-app` and without setup issue 
+11. Delete installed file like `App.test` , `index.css` , `SetupTest.js`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### What issue I fixed ? 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. "no function" error → add {} for {addTodo}
+2. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### how to do better next time ? 
 
-### `npm run build`
+1. when display "no function" check {} is inclued the text 
+2. writedown my issue, and all possible solutions, try it step by step → I repeat wrong steps and it waste so much time
+3. use `console.log` to check the value
+4. Focus on `useState` practice
+5. Clone more project and learn their skill
+6. Check the code by using `CodeGeeX`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### What I don't know ? 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. what's uuidv4 and how to use ? 
+2. how to  use `map`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+setTodos(todos.map(todo => todo.id === id ? {...todo, completed: !todo.completed} : todo))
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+3. whole logic of to-do list app → I can't create on my own and without referecne 
